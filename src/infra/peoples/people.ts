@@ -95,12 +95,11 @@ getAllPeoples(): PeopleDTO[]{
   return this.peopleList
 }
 
-addPeople(people: PeopleDTO): void{
-      this.peopleList.push(people) 
+addPeople(people: PeopleDTO): void{ 
+ this.peopleList.push(people)
 }
 
-
-getByCpf(cpf: string): PeopleDTO[]{
+  getByCpf(cpf: string): PeopleDTO[]{
   let people = this.peopleList.filter((people) => people.CPF === cpf)
   return people
 }
